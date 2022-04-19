@@ -5,8 +5,6 @@ import Input from './components/Input';
 import Slider from './components/Slider';
 import Tab from './components/Tab';
 import Toggle from './components/Toggle';
-import Test from './components/Test';
-
 
 function App() {
   return (
@@ -14,14 +12,30 @@ function App() {
       <header className="App-header">
         <img src={profile} className="App-logo" alt="logo" />
       </header>
-      <body>
-        <Dropdown></Dropdown>
-        <Input></Input>
-        <Slider></Slider>
-        <Tab></Tab>
-        <Toggle></Toggle>
-        <Test></Test>
-      </body>
+      <div className="body">
+        <ol>
+          {/* <li>
+            Toggle.js
+            <Toggle></Toggle>
+          </li> */}
+          <li>
+            Tab.js
+            <Tab></Tab>
+          </li>
+          {/* <li>
+            Slider.js
+            <Slider></Slider>
+          </li>
+          <li>
+            Input.js
+            <Input></Input>
+          </li>
+          <li>
+            Dropdown.js
+            <Dropdown></Dropdown>
+          </li> */}
+        </ol>
+      </div>
     </div>
   );
 }

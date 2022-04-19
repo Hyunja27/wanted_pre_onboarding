@@ -1,0 +1,27 @@
+
+#checkbox:checked + #label #active {
+    transform: translateX(123px);
+}
+
+#label div{
+    width: 50%;
+    text-align: center;
+}
+
+#brief{
+    color: #646464;
+}
+
+#specize{
+    color: #a0a0a0;
+}
+
+#checkbox:checked + #label #brief{
+    color: #a0a0a0;
+}
+
+#checkbox:checked + #label #specize{
+    color: #646464;
+}
+
+

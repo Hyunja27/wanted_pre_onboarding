@@ -1,10 +1,8 @@
 import { styled } from '@stitches/react';
 
-const element = <div>input</div>
-
 const Input = () =>{
     return (
-        element
+        <div></div>
     );
 }
 
