@@ -1,0 +1,31 @@
+
+#value1:checked + label{
+    /* transform: translateX(123px); */
+    background-color: aqua;
+}
+
+#value2:checked + label{
+    /* transform: translateX(123px); */
+    background-color: red;
+}
+
+#value3:checked + label{
+    /* transform: translateX(123px); */
+    background-color: burlywood;
+}
+
+#brief{
+    color: #646464;
+}
+
+#specize{
+    color: #a0a0a0;
+}
+
+#checkbox:checked + #label #brief{
+    color: #a0a0a0;
+}
+
+#checkbox:checked + #label #specize{
+    color: #646464;
+}

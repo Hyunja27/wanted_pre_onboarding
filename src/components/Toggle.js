@@ -43,7 +43,7 @@ const Toggle = () =>{
                 <div id='specize'>
                     상세
                 </div>
-                <Active id='active'></Active>
+                <Active id='activetoggle'></Active>
             </Label>
         </div>
     );

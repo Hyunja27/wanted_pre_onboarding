@@ -1,9 +1,19 @@
 
-#checkbox:checked + #label #active {
+#checkbox:checked + #label #activetoggle {
     transform: translateX(123px);
 }
 
-#label div{
+#label #brief{
+    width: 50%;
+    text-align: center;
+}
+
+#label #specize{
+    width: 50%;
+    text-align: center;
+}
+
+#label #activetoggle{
     width: 50%;
     text-align: center;
 }
