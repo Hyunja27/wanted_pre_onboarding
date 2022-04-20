@@ -36,7 +36,7 @@ const Toggle = () =>{
     return (
         <div className='toggle'>
             <InvisibleCheckBox id='checkbox' type='checkbox'/>
-            <Label id='label' for="checkbox">
+            <Label id='label' htmlFor="checkbox">
                 <div id='brief'>
                     기본
                 </div>
