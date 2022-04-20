@@ -1,16 +1,16 @@
 
-#value1:checked + label{
-    /* transform: translateX(123px); */
+#value1:checked ~ #label #active {
+    transform: translateX(0px);
     background-color: aqua;
 }
 
-#value2:checked + label{
-    /* transform: translateX(123px); */
+#value2:checked ~ #label #active {
+    transform: translateX(100%);
     background-color: red;
 }
 
-#value3:checked + label{
-    /* transform: translateX(123px); */
+#value3:checked ~ #label #active {
+    transform: translateX(200%);
     background-color: burlywood;
 }
 

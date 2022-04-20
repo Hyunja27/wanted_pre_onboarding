@@ -14,10 +14,10 @@ function App() {
       </header>
       <div className="body">
         <ol>
-          {/* <li>
+          <li>
             Toggle.js
             <Toggle></Toggle>
-          </li> */}
+          </li>
           <li>
             Tab.js
             <Tab></Tab>
