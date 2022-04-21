@@ -10,3 +10,15 @@
 #value3:checked ~ #label #active {
     transform: translateX(200%);
 }
+
+#value1:checked ~ #namelabelcontainer #label1 {
+    color: #646464;
+}
+
+#value2:checked ~ #namelabelcontainer #label2 {
+    color: #646464;
+}
+
+#value3:checked ~ #namelabelcontainer #label3 {
+    color: #646464;
+}

@@ -1,3 +1,11 @@
+li{
+  padding-bottom: 3em;
+}
+
+span{
+  padding-bottom: 3em;
+}
+
 .App {
   text-align: center;
 }

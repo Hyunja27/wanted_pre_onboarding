@@ -15,20 +15,20 @@ function App() {
       <div className="body">
         <ol>
           <li>
-            Toggle.js
+            <span>Toggle.js</span>
             <Toggle></Toggle>
           </li>
           <li>
             Tab.js
             <Tab></Tab>
           </li>
-          {/* <li>
-            Slider.js
-            <Slider></Slider>
-          </li>
           <li>
             Input.js
             <Input></Input>
+          </li>
+          {/* <li>
+            Slider.js
+            <Slider></Slider>
           </li>
           <li>
             Dropdown.js

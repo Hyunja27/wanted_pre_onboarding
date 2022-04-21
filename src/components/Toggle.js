@@ -27,14 +27,19 @@ const Active = styled("div", {
     borderRadius: "70px",
     backgroundColor: "rgba(255,255,255,20)",
     position: "absolute",
-    transition: "transform 0.14s linear",
+    transition: "transform 0.19s linear",
     zIndex: "-1"
+})
+
+const ToggleContainer = styled("div", {
+    padding: "2em",
+    alignSelf: "center"
 })
 
 
 const Toggle = () =>{
     return (
-        <div className='toggle'>
+        <ToggleContainer className='toggle'>
             <InvisibleCheckBox id='checkbox' type='checkbox'/>
             <Label id='label' htmlFor="checkbox">
                 <div id='brief'>
@@ -45,7 +50,7 @@ const Toggle = () =>{
                 </div>
                 <Active id='activetoggle'></Active>
             </Label>
-        </div>
+        </ToggleContainer>
     );
 }
 
