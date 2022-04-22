@@ -19,18 +19,18 @@ function App() {
             <Toggle></Toggle>
           </li>
           <li>
-            Tab.js
+            <span>Tab.js</span>
             <Tab></Tab>
           </li>
           <li>
-            Input.js
+            <span>Input.js</span>
             <Input></Input>
           </li>
           {/* <li>
             Slider.js
             <Slider></Slider>
-          </li>
-          <li>
+          </li> */}
+          {/* <li>
             Dropdown.js
             <Dropdown></Dropdown>
           </li> */}

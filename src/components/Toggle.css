@@ -19,10 +19,12 @@
 }
 
 #brief{
+    font-weight: bold;
     color: #646464;
 }
 
 #specize{
+    font-weight: bold;
     color: #a0a0a0;
 }
 

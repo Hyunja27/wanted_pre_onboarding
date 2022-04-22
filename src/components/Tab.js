@@ -36,6 +36,7 @@ const NameLabelContainer = styled("div",{
 
 const NameLabel = styled("label",{
     width: "33.3%",
+    fontWeight: "bold",
     color: "#a0a0a0"
 })
 
@@ -48,8 +49,8 @@ const TabContainer = styled("div", {
 const Tab = () =>{
     return (
         <TabContainer id="container">
-            <RadioInput id='value1' name="food" type='radio' value='감자'/>
-            <RadioInput id='value2' name="food" type='radio' value='고구마'/>
+            <RadioInput id='value1' name="food" type='radio' value='감자' />
+            <RadioInput id='value2' name="food" type='radio' value='고구마' />
             <RadioInput id='value3' name="food" type='radio' value='카레라이스'/>
             <NameLabelContainer id="namelabelcontainer">
                 <NameLabel id="label1" htmlFor="value1"> 감자 </NameLabel>
