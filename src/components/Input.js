@@ -1,6 +1,11 @@
 import { styled } from '@stitches/react';
 import "./Input.css";
 
+const InputMaker = styled("div", {
+    margin: 0,
+    padding: 0
+})
+
 const InputZone = styled("input",{
     margin: 0,
     padding: 0,
@@ -15,6 +20,8 @@ const NameLabel = styled("label",{
     marginTop: "2%",
     display: "inline-block",
     textAlign: "left",
+    fontSize: "small",
+    color: "#6e6f6a",
     width: "100%",
     height: "30%"
 })
@@ -55,6 +62,7 @@ const Input = () =>{
                 <FormContantContainer id="emailZone"> 
                     <NameLabel for='emailInput'> E-mail</NameLabel>
                     <InputZone id='emailInput' type='email' name='user_email' placeholder='E-mail' />
+
                 </FormContantContainer>
                 <FormContantContainer id="passwordZone">
                     <NameLabel for='passwordInput'> Password</NameLabel>
