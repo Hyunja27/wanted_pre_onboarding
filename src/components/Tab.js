@@ -15,7 +15,7 @@ const Active = styled("div", {
     backgroundColor: "#0aaeaf",
     position: "absolute",
     borderRadius: "70px",
-    transition: "transform 0.24s linear"
+    transition: "transform 0.28s linear"
 })
 
 const Label = styled('label',{

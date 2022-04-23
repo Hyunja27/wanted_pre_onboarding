@@ -29,8 +29,8 @@ function App() {
           {/* <li>
             Slider.js
             <Slider></Slider>
-          </li> */}
-          {/* <li>
+          </li>
+          <li>
             Dropdown.js
             <Dropdown></Dropdown>
           </li> */}

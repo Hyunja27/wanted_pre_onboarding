@@ -22,7 +22,7 @@ const InvisibleCheckBox = styled('input', {
 const Active = styled("div", {
     padding: 0,
     margin: 0,
-    marginTop: "1px", 
+    marginTop: "0.1px", 
     width: "50%",
     height: "25px",
     borderRadius: "70px",
