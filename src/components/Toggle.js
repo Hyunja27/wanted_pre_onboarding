@@ -1,5 +1,7 @@
 import { styled } from '@stitches/react';
 import "./Toggle.css"
+import handCursor from "../images/handCursor.png"
+
 
 const Label = styled('label',{
     width: "250px",
@@ -10,7 +12,8 @@ const Label = styled('label',{
     padding: "2px",
     display: "flex",
     position: "relative",
-    zIndex: "1"
+    zIndex: "1",
+    cursor: handCursor
 })
 
 const InvisibleCheckBox = styled('input', {
@@ -34,7 +37,8 @@ const Active = styled("div", {
 
 const ToggleContainer = styled("div", {
     padding: "2em",
-    alignSelf: "center"
+    display: "flex",
+    justifyContent: "center"
 })
 
 

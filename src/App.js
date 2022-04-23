@@ -1,4 +1,4 @@
-import profile from './logo.svg';
+import profile from './wanted_preonboarding.png';
 import './App.css';
 import Dropdown from './components/Dropdown';
 import Input from './components/Input';
@@ -12,6 +12,7 @@ function App() {
       <header className="App-header">
         <img src={profile} className="App-logo" alt="logo" />
       </header>
+      <span className="submitter">제출자 : 박성현</span>
       <div className="body">
         <ol>
           <li>

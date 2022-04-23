@@ -71,6 +71,7 @@ const BackGroundZone = styled("div",{
     padding: 0,
     width: "300px",
     height: "150px",
+    display: "flex",
     justifyContent: "center",
     backgroundColor: "#f1f1e6",
     cursor: "url('../images/handCursor.png')"
@@ -118,21 +119,23 @@ const Input = () =>{
     };
 
     return (
-        <BackGroundZone>
-            <FormContainer name="해당 폼의 이름" action="값을 보낼 주소" method="post">
-                <FormContantContainer id="emailZone"> 
-                    <NameLabel forhtml='emailInput'> E-mail</NameLabel>
-                    <InputZone id='emailInput' type='email' name='user_email' placeholder='E-mail' onChange={changeEmailValue} onBlur={isEmailContextError} />
-                    <InputMaker id="uncheckIcon" src={emailIcon} alt='uncheck'/>
-                    {mayError}
-                </FormContantContainer>
-                <FormContantContainer id="passwordZone">
-                    <NameLabel forhtml='passwordInput'> Password</NameLabel>
-                    <InputZone id='passwordInput' type={passwordForm} name='userPassword' placeholder='Password'/>
-                    <InputMaker id="passwordIcon" src={passwordIcon} alt='invisible' onClick={clickPasswordIcon}/>
-                </FormContantContainer>
-            </FormContainer>
-        </BackGroundZone>
+        <div id="alignContainer">
+            <BackGroundZone>
+                <FormContainer name="해당 폼의 이름" action="값을 보낼 주소" method="post">
+                    <FormContantContainer id="emailZone"> 
+                        <NameLabel forhtml='emailInput'> E-mail</NameLabel>
+                        <InputZone id='emailInput' type='email' name='user_email' placeholder='E-mail' onChange={changeEmailValue} onBlur={isEmailContextError} />
+                        <InputMaker id="uncheckIcon" src={emailIcon} alt='uncheck'/>
+                        {mayError}
+                    </FormContantContainer>
+                    <FormContantContainer id="passwordZone">
+                        <NameLabel forhtml='passwordInput'> Password</NameLabel>
+                        <InputZone id='passwordInput' type={passwordForm} name='userPassword' placeholder='Password'/>
+                        <InputMaker id="passwordIcon" src={passwordIcon} alt='invisible' onClick={clickPasswordIcon}/>
+                    </FormContantContainer>
+                </FormContainer>
+            </BackGroundZone>
+        </div>
     );
 };
 
