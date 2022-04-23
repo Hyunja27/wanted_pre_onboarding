@@ -12,8 +12,7 @@ const Label = styled('label',{
     padding: "2px",
     display: "flex",
     position: "relative",
-    zIndex: "1",
-    cursor: handCursor
+    zIndex: "1"
 })
 
 const InvisibleCheckBox = styled('input', {
@@ -25,7 +24,6 @@ const InvisibleCheckBox = styled('input', {
 const Active = styled("div", {
     padding: 0,
     margin: 0,
-    marginTop: "0.1px", 
     width: "50%",
     height: "25px",
     borderRadius: "70px",

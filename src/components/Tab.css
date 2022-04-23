@@ -22,3 +22,15 @@
 #value3:checked ~ #namelabelcontainer #label3 {
     color: #646464;
 }
+
+#label1{
+    cursor: pointer;
+}
+
+#label2{
+    cursor: pointer;
+}
+
+#label3{
+    cursor: pointer;
+}

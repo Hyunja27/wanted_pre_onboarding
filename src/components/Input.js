@@ -87,7 +87,7 @@ const Input = () =>{
     const [mayError, setMayError] = useState("");
     const [emailValue, setEmailValue] = useState(false);
     const [emailIcon, setEmailIcon] = useState(uncheck);
-    const [passwordIcon, setpasswordIcon] = useState(visible);
+    const [passwordIcon, setpasswordIcon] = useState(invisible);
     const [passwordForm, setPasswordForm] = useState("password");
 
     const isEmailContextError = () => {

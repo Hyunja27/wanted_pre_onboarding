@@ -27,11 +27,11 @@ function App() {
             <span>Input.js</span>
             <Input></Input>
           </li>
-          {/* <li>
+          <li>
             Slider.js
             <Slider></Slider>
           </li>
-          <li>
+          {/* <li>
             Dropdown.js
             <Dropdown></Dropdown>
           </li> */}
