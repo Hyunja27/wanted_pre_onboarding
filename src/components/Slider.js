@@ -13,12 +13,14 @@ const SliderBtnContainer = styled("div",{
 
 const SliderBtn = styled("label",{
     margin: 0,
-    padding: 0,
-    paddingRight: "43%",
+    padding: "3px",
+    marginRight: "40%",
     width: "33.3%",
     fontWeight: "bold",
-    fontSize: "small",
-    color: "#a0a0a0"
+    fontSize: "3px",
+    borderRadius: "5px",
+    color: "#a0a0a0",
+    backgroundColor: "#efefef"
 })
 
 const SliderBtnZone = styled('div', {
@@ -49,10 +51,28 @@ const PercentZone = styled('div', {
     justifyContent: "center"
 });
 
+const SliderSelector = styled('div', {
+    margin: 0,
+    padding: 0,
+    width: "100%",
+    height: "10px",
+    position: "absolute",
+});
+
+const SliderSelectorBtn = styled('div', {
+    margin: 0,
+    padding: 0,
+    width: "20px",
+    height: "20px",
+    backgroundColor: "red",
+    position: "absolute",
+    bottom: 0
+});
+
 const SliderInput = styled('input', {
     margin: 0,
     padding: 0,
-    width: "95%"
+    width: "100%",
 });
 
 const SliderValue = styled('div', {
@@ -83,21 +103,25 @@ const ValueBox = styled('div', {
 });
 
 const SliderContainer = styled('div',{
+    padding: "2em",
     width: "400px",
     height: "300px"
 });
 
 const Slider = () =>{
-    const [sliderVal, setSliderVal] = useState(0);
+    const [sliderVal, setSliderVal] = useState(1);
     const sliderCurrent = useRef();
+    const customSlider = useRef();
 
     const slidingSiderVal = (param) =>{
         setSliderVal(param.target.value);
+        console.log(param.target.value);
+        customSlider.current.style.left = param.target.value + "%";
     };
     const btnSiderVal = (param) =>{
-        console.log(sliderCurrent.current.value);
         setSliderVal(parseInt(param.target.outerText));
         sliderCurrent.current.value = parseInt(param.target.outerText);
+        customSlider.current.style.left = param.target.outerText;
     };
 
 
@@ -109,6 +133,10 @@ const Slider = () =>{
             </PercentZone>
             <SliderZone>
                 <SliderInput id="slider" type="range" min="1" max="100" defaultValue="1" ref={sliderCurrent} onInput={slidingSiderVal} />
+                {/* <SliderSelector>
+                    <SliderSelectorBtn ref={customSlider}>
+                    </SliderSelectorBtn>
+                </SliderSelector> */}
             </SliderZone>
             <SliderBtnZone>
                 <SliderBtnContainer id="SliderBtncontainer">

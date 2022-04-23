@@ -1,0 +1,7 @@
+#slider::-webkit-slider-thumb{
+    cursor: pointer;
+    width: 100px;
+    height: 60px;
+    z-index: 3;
+    position: relative;
+}
